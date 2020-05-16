@@ -1,14 +1,13 @@
-import 'dart:html' as html;
 import 'package:bk1031_dev/utils/theme.dart';
 import 'package:bk1031_dev/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 
-class BioPage extends StatefulWidget {
+class ProjectsPage extends StatefulWidget {
   @override
-  _BioPageState createState() => _BioPageState();
+  _ProjectsPageState createState() => _ProjectsPageState();
 }
 
-class _BioPageState extends State<BioPage> {
+class _ProjectsPageState extends State<ProjectsPage> {
 
   @override
   void initState() {
@@ -19,7 +18,7 @@ class _BioPageState extends State<BioPage> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).size.width > 650) {
       return new Title(
-        title: "BK1031 – Bio",
+        title: "BK1031 – Projects",
         color: currTextColor,
         child: Scaffold(
           backgroundColor: currBackgroundColor,
