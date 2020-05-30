@@ -19,16 +19,19 @@ class _BioPageState extends State<BioPage> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).size.width > 650) {
       return new Title(
-        title: "BK1031 – Bio",
+        title: "Bharat Kathi – Bio",
         color: currTextColor,
         child: Scaffold(
           backgroundColor: currBackgroundColor,
-          body: new SingleChildScrollView(
-            child: new Column(
-              children: <Widget>[
-                NavBar()
-              ],
-            ),
+          body: new Column(
+            children: <Widget>[
+              NavBar(),
+              new SingleChildScrollView(
+                child: new Column(
+
+                ),
+              )
+            ],
           ),
         ),
       );

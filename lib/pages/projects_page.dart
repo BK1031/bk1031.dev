@@ -18,7 +18,7 @@ class _ProjectsPageState extends State<ProjectsPage> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).size.width > 650) {
       return new Title(
-        title: "BK1031 – Projects",
+        title: "Bharat Kathi – Projects",
         color: currTextColor,
         child: Scaffold(
           backgroundColor: currBackgroundColor,

@@ -38,12 +38,7 @@ class _HomePageState extends State<HomePage> {
     getDiscordOnline();
     _timer = new Timer.periodic(const Duration(seconds: 2), (timer) {
       setState(() {
-        if (currSkill + 1 < skillList.length) {
-          currSkill += 1;
-        }
-        else {
-          currSkill = 0;
-        }
+        (currSkill + 1 < skillList.length) ? currSkill += 1 : currSkill = 0;
       });
     });
   }
@@ -58,7 +53,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     if (MediaQuery.of(context).size.width > 1100) {
       return new Title(
-        title: "BK1031",
+        title: "Bharat Kathi",
         color: currTextColor,
         child: Scaffold(
           backgroundColor: currBackgroundColor,
@@ -146,6 +141,11 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 new Container(
+                  child: new Text(
+                    ""
+                  ),
+                ),
+                new Container(
                   child: new Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  new Text("Something broken?", style: TextStyle(fontSize: 35, color: currTextColor, fontWeight: FontWeight.bold),),
+                                  new Text("Something broken?", style: TextStyle(fontSize: 33, color: currTextColor, fontWeight: FontWeight.bold),),
                                   new Padding(padding: EdgeInsets.all(4)),
                                   new Text("🟢 3 Services Online", style: TextStyle(fontSize: 25, color: currDividerColor),),
                                   new Padding(padding: EdgeInsets.all(6)),
@@ -206,7 +206,7 @@ class _HomePageState extends State<HomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  new Text("Want to chat?", style: TextStyle(fontSize: 35, color: currTextColor, fontWeight: FontWeight.bold),),
+                                  new Text("Want to chat?", style: TextStyle(fontSize: 33, color: currTextColor, fontWeight: FontWeight.bold),),
                                   new Padding(padding: EdgeInsets.all(4)),
                                   new Text("🟢 $discordOnline Members Online", style: TextStyle(fontSize: 25, color: currDividerColor),),
                                   new Padding(padding: EdgeInsets.all(6)),
@@ -351,7 +351,7 @@ class _HomePageState extends State<HomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  new Text("Something broken?", style: TextStyle(fontSize: 25, color: currTextColor, fontWeight: FontWeight.bold),),
+                                  new Text("Something broken?", style: TextStyle(fontSize: 23, color: currTextColor, fontWeight: FontWeight.bold),),
                                   new Padding(padding: EdgeInsets.all(4)),
                                   new Text("🟢 3 Services Online", style: TextStyle(fontSize: 20, color: currDividerColor),),
                                   new Padding(padding: EdgeInsets.all(6)),
@@ -391,7 +391,7 @@ class _HomePageState extends State<HomePage> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: <Widget>[
-                                  new Text("Want to chat?", style: TextStyle(fontSize: 25, color: currTextColor, fontWeight: FontWeight.bold),),
+                                  new Text("Want to chat?", style: TextStyle(fontSize: 23, color: currTextColor, fontWeight: FontWeight.bold),),
                                   new Padding(padding: EdgeInsets.all(4)),
                                   new Text("🟢 $discordOnline Members Online", style: TextStyle(fontSize: 20, color: currDividerColor),),
                                   new Padding(padding: EdgeInsets.all(6)),

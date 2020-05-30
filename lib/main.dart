@@ -22,7 +22,7 @@ void main() {
 
   runApp(new MaterialApp(
     home: new HomePage(),
-    title: "BK1031",
+    title: "Bharat Kathi",
     theme: mainTheme,
     debugShowCheckedModeBanner: false,
     onGenerateRoute: router.generator,
